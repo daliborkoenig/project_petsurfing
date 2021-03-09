@@ -1,0 +1,480 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* ---------- HEADER START ---------- */
+
+.header{
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  font-weight: 100;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ---------- HEADER END ---------- */
+
+
+
+/* ---------- DROPDOWN MENU START ---------- */
+
+.hover-1{
+  position: relative;
+}
+
+.sub-menu{
+  display: none;
+  background-color: white;
+  width: 200px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hover-1:hover .sub-menu{
+  display: block;
+  position: absolute;
+  right: 20px;
+}
+
+.hover-1:hover .icon{
+  box-shadow: 
+  inset 2px 2px 2px 0 rgba(0, 0, 0, 0.2),
+  inset -2px -2px 2px 0 rgba(241, 241, 241, 0.5);
+  transform: scale(0.98);
+}
+
+.icon{
+  /* border: 1px solid grey; */
+  /* background-color: rgb(241, 241, 241); */
+  padding: 3px 3px 3px 10px;
+  border-radius: 20px;
+  box-shadow: 
+  2px 2px 2px 0 rgba(0, 0, 0, 0.2),
+  -2px -2px 2px 0 rgba(241, 241, 241, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+
+.icon i:nth-child(2){
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  background-color: grey;
+}
+
+.hover-1{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.nav{
+  padding-top: 10px;
+}
+
+.nav-2{
+  padding-top: 10px;
+}
+
+.nav li:hover{
+  /* text-decoration: underline; */
+}
+
+.nav > ul > li > a::after,
+.nav-2 > ul > li > a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000;
+  transition: width .3s;
+}
+
+.nav > ul > li > a:hover::after,
+.nav-2 > ul > li > a:hover::after  {
+  width: 100%;
+  transition: width .3s;
+}
+
+.sub-menu li{
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.sub-menu li:nth-child(4){
+  margin-top: 10px;
+}
+.sub-menu li:nth-child(6),
+.sub-menu li:nth-child(7),
+.sub-menu li:nth-child(8){
+  display: none;
+}
+
+.sub-menu li:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* ---------- DROPDOWN MENU END ---------- */
+
+/* ---------- HEADER END ---------- */
+
+/* ---------- SEARCH BAR START ---------- */
+
+.search-bar{
+  top: 80%;
+  left: 20%;
+  position: absolute;
+  z-index: 9;
+  width: 60%;
+  margin: auto;
+  font-weight: bold;
+  font-size: 12px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50px;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fields{
+  width: 25%;
+  border-radius: 50px;
+}
+
+.fields:hover,
+.fields:hover input,
+.fields:hover select,
+.fields:hover label{
+  background-color: rgb(236, 236, 236);
+}
+
+.fields ::placeholder{
+  font-size: 14px;
+}
+
+.fields input:focus,
+.fields select:focus{
+  outline: none;
+}
+
+.fields input, 
+.fields select, 
+.fields label{
+  border: transparent;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+}
+
+.fields input,
+.fields select,
+::placeholder{
+  margin-top: -10px;
+  color: grey;
+}
+
+
+.submit{
+  position: absolute;
+  width: 120px;
+  height: 58px;
+  left: 88.5%;
+  top: 13%;
+  border-radius: 50px;
+  background-color: #EE554E;
+}
+
+.submit > input{
+  color: #ffffff;
+  background-color: #EE554E;
+  font-weight: bold;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+/* ---------- SEARCH BAR END ---------- */
+
+.title{
+  position: absolute;
+  width: 100%;
+  top: 94%;
+  color: white !important;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 6vh;
+  padding-top: 10px;
+}
+
+
+/* ---------- CAROUSEL-1 START ---------- */
+
+.carousel-1 img {
+  object-fit: cover;
+  height: 92vh;
+}
+
+.carousel-1{
+  padding-top: 8vh;
+}
+
+/* ---------- CAROUSEL-1 END ---------- */
+
+
+/* ---------- CUSTOMERS CARDS START ---------- */
+
+.customers{
+  flex-wrap: wrap;
+  /* margin: auto; */
+  margin-left: 9%;
+  font-size: 15px;
+}
+
+.mini-card img{
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.mini-card p:nth-child(1){
+  font-weight: bold;
+}
+
+.mini-card:hover{
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+
+/* ---------- CUSTOMERS CARDS END ---------- */
+
+/* ---------- HOST CARDS START ---------- */
+
+.host-cards{
+  height: 35vh;
+}
+
+.host-cards img{
+  border-radius: 5px;
+  margin: 10px;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+/* ---------- HOST CARDS END ---------- */
+
+/* ---------- CAROUSEL-2 STARTS ---------- */
+
+.button{
+  color: black;
+  background-color: white;
+  width: 13%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.carousel-2 {
+  padding-top: 100px;
+}
+
+.carousel-2 img {
+  object-fit: cover;
+  height: 50vh;
+  width: 100%;
+  object-position: center;
+  border-radius: 20px !important;
+}
+
+.caption-1{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+
+/* ---------- CAROUSEL-2 END ---------- */
+
+
+/* ---------- EXPERIENCES CARDS START ---------- */
+
+.experiences-cards{
+  height: 50vh;
+}
+
+.experiences-cards img{
+  border-radius: 5px;
+  margin: 10px;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+/* ---------- EXPERIENCES CARDS END ---------- */
+
+
+
+
+
+/* Code for ..small devices (landscape phones, 576px and up).. goes here */
+@media (max-width: 765px){
+  .title{
+    width: 100%;
+    top: 32%;
+  }
+  .logo{
+    width: 150px;
+  }
+  .nav{
+    display: none;
+  }
+  .sub-menu li:nth-child(6),
+  .sub-menu li:nth-child(7),
+  .sub-menu li:nth-child(8){
+  display: block;
+  }
+  .nav-2 li:nth-child(1){
+    display: none;
+  }
+
+  .icon{
+  }
+
+  .customers{
+    margin-left: 5px;
+  }
+  
+
+  .mini-card{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .host-cards{
+    height: 35vh;
+    padding-bottom: 50px !important;
+  }
+  .hosts h1{
+    /* text-align: center; */
+    padding-bottom: 20px !important;
+  }
+  
+  .carousel-2{
+    padding-left: 17px;
+  }
+
+  .caption-1{
+    
+  }
+
+  .carousel-item img{
+    height: 30vh;
+  }
+  .experiences h1{
+    /* text-align: center; */
+    padding-bottom: 20px !important;
+  }
+  .experiences-cards{
+    height: 50vh;
+    padding-bottom: 100px !important;
+    padding-right: 0 !important;
+  }
+
+  .experiences-2{
+    flex-direction: column;
+
+  }
+  #loader-wrapper{
+    display: none;
+  }
+  .search-bar{
+    display: none !important;
+  }
+}
+
+/* Code for ..Medium devices (tablets, 768px and up).. goes here */
+@media (min-width: 768px) and (max-width: 992px){
+  .logo{
+    width: 150px;
+  }
+  .nav{
+    display: none;
+  }
+
+  .sub-menu li:nth-child(6),
+  .sub-menu li:nth-child(7),
+  .sub-menu li:nth-child(8){
+  display: block;
+  }
+
+  .nav-2 li:nth-child(1){
+    display: none;
+  }
+
+  .icon{
+    /* margin-top: 10px; */
+  }
+  .hosts h1{
+    /* text-align: center; */
+    padding-bottom: 20px !important;
+  }
+
+  .host-cards{
+    height: 25vh;
+    padding-bottom: 50px !important;
+  }
+
+  .button{
+    color: black;
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  .experiences h1{
+    /* text-align: center; */
+    padding-bottom: 20px !important;
+  }
+  .experiences-cards{
+    height: 30vh;
+  }
+
+  .experiences div:nth-child(3){
+    display: none;
+  }
+  .search-bar{
+    display: none !important;
+  }
+}

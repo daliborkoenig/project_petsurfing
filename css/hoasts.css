@@ -1,0 +1,297 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+line-height: 1.3;
+}
+
+body {
+    width: 100vw;
+    font-family: "Open Sans", sans-serif;
+}
+
+p, h1, h2, h3 {
+    padding: 6px 0px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/* header section */
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items:flex-end;
+    padding-left: 25px;
+}
+
+.header img {
+    width: 60px;
+}
+
+/* container one */
+.container-one {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+    gap: 10px;
+}
+
+
+/* left grid col in container */
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px ;
+}
+
+.intro h1 {
+    padding-top: 0px;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.create-btn {
+    align-self: flex-start;
+    margin-top: 20px;
+    padding: 17px 32px;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgba(255, 0, 157, 0.9));
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    transform: scale(1.01);
+
+}
+
+
+.help-btn {
+    align-self: flex-start;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.help-btn:hover {
+    transform: scale(1.01);
+
+}
+
+
+/* right grid col in container */
+.hoasts {
+    display: flex;
+}
+
+.hoasts img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.hoasts div {
+    margin: 0px 10px;
+    overflow: hidden;
+}
+
+.hoasts figcaption {
+    padding: 20px 10px;
+}
+
+.hoasts a {
+    color: black;
+    color: rgb(100, 100, 100);
+}
+
+/* line to seperate */
+
+.line {
+    border-bottom: 1px solid rgb(204, 203, 203);
+    width: 100vw;
+    margin: 20px 0px;
+}
+
+/* container-two */
+
+.container-two {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-two a{
+    text-decoration: none;
+    color: black;
+}
+
+.how-to {
+    display: flex;
+}
+
+.how-to img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.how-to div {
+    margin: 30px 20px 30px 0px;
+    overflow: hidden;
+}
+
+.how-to figcaption {
+    padding: 20px 10px;
+}
+
+/* container-three */
+
+.container-three {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url(../images/hoast_pets/cat_table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card {
+    position: absolute;
+    height: 100%;
+    width: 400px;
+    background-color: rgb(253, 250, 253);
+    left: 40px;
+    padding: 40px;
+}
+
+.card p {
+    line-height: 1.8;
+
+}
+
+
+/* Code for ..small devices (landscape phones, 576px and up).. goes here */
+@media (max-width: 767px) {
+    .header {
+        padding-left: 15px;
+    }
+    .header img {
+        width: 70px;
+    }
+
+    /* container one */
+    .container-one {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+/* left grid col in container */
+
+    .intro p {
+        line-height: 1.5;
+    }
+
+    .create-btn {
+        padding: 22px 42px;
+    }
+
+    .create-btn:hover {
+        transform: scale(1);
+    }
+
+    .help-btn {
+        padding: 20px 40px;
+    }
+
+    .help-btn:hover {
+        transform: scale(1);
+    }
+
+/* right grid col in container */
+    .hoasts {
+        display: flex;
+        flex-direction: column;
+    }
+    .hoasts img {
+        width: 100%;
+        border-radius: 6px 6px 0px 0px;
+    }
+    
+    .hoasts div {
+        margin: 0px 0px 15px 0px;
+        box-shadow: 0px 0px 5px rgb(231, 231, 231);
+        border-radius: 6px;
+    }
+
+    .hoasts figcaption {
+        padding: 5px 10px;
+    }
+
+    /* container-two */
+
+    .container-two {
+        padding: 20px;
+    }  
+
+    .how-to {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .how-to div {
+        margin: 0px 0px 15px 0px;
+        box-shadow: 0px 0px 5px rgb(231, 231, 231);
+        border-radius: 6px;
+    }
+
+    .how-to figcaption {
+        padding: 10px 10px;
+    }
+
+    .how-to img {
+        border-radius: 6px 6px 0px 0px;
+    }
+
+    /* container three */
+    .container-three {
+        height: 40vh;
+        width: 100vw;
+        position: relative;
+        background-image: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .card {
+        position: absolute;
+        width: 95vw;
+        left: 0px;
+        padding: 20px;
+    }
+    
+    .card p {
+        line-height: 1.5;
+    
+    }
+}
+
+
+/* Code for ..Medium devices (tablets, 768px and up).. goes here */
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
