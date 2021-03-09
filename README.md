@@ -1,7 +1,5 @@
 # petsurfing
 
-<!-- normans notes -->
+Group project for class. 
 
-- next: social-media
-
-- at card add bootstrap card class
+Aibnb type of a platform for sharing accommodation for pets.
